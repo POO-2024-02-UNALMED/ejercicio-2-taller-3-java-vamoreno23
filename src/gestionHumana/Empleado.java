@@ -1,10 +1,10 @@
-package **;
+package gestionHumana;
 
 public class Empleado {
 
-    ** final long cedula;
-    ** String nombre;
-    ** String cargo;
+    public final long cedula;
+    public String nombre;
+    String cargo;
     
     public Empleado(long cedula, String nombre, String cargo) {
         this.cedula = cedula;
@@ -12,7 +12,7 @@ public class Empleado {
         this.cargo = cargo;
     }
 
-    ** boolean tengoPermiso() {
+    public boolean tengoPermiso() {
         return cargo.contains("Administrador");
     }
 }
